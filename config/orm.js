@@ -8,6 +8,7 @@ var orm = {
             if(err) throw err;
             //using cb to pass the result into our next fille in the file system models folder
             cb(result);
+            console.log('ur a dick');
         })
     },
     // 

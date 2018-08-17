@@ -4,9 +4,9 @@ var methodOverride = require('method-override');
 var exphbs = require('express-handlebars');
 
 var app = express();
-//app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 //app.use(__dirname + '/public', express.static(“public”));
-app.use("/public",express.static("public"))
+//app.use("public",express.static(__dirname+ "/public"))
 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 app.use(methodOverride('_method'));
 
 app.engine('handlebars', exphbs({
-    defaultlayout: 'main'
+    defaultLayout: 'main'
 }));
 
 app.set('view engine', 'handlebars');
