@@ -17,7 +17,7 @@ router.get('/', function(req, res){
         res.render('index', {burger_data });
     })
 })
-//put
+//put:updating already existing data
 router.put('/burgers/update', function(req,res) {
     burger.update(req.body.burger_id, function(result) {
         console.log(result);
@@ -27,12 +27,12 @@ router.put('/burgers/update', function(req,res) {
 
 router.post('/burgers/create', function(req, res) {
     //burger.create(req.body.burger_name, function(results) {
-    burger.create(req.body.burger_name, req.body.burger_price, function(results) {    
+    // console.log(req.body);
+    burger.create(req.body.burger_name, req.body.burger_price, function(result) {    
         res.redirect('/');
     })
 })
 
-//**could be wrong */
 module.exports = router;
-//module.exports = burgers_controllers;
+
 

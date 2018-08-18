@@ -13,8 +13,8 @@
          orm.update('burgers', id, cb)
      },
 
-     create: function(name,cb) {
-         orm.create('burgers', name, cb);
+     create: function(name, price, cb) {
+         orm.create('burgers', name, price, cb);
      }
  }
 

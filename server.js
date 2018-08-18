@@ -23,7 +23,10 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/burgers_controllers')
 app.use('/', routes);
 
-var port = 3050;
-app.listen(port);
 
-//***Users/peterlim/Desktop/Trilogy/burger/controllers/burgers_controllers.js
+// Set the port of our application
+// process.env.PORT lets the port be set by Heroku
+//var PORT = process.env.PORT || 8080;
+
+var port = process.env.PORT || 3050;
+
