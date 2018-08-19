@@ -10,7 +10,10 @@ Eat Da Burger is a burger logger.
 * node.path: module provides utlitlies for working w/file + directory paths
 * node express-handlebars: uses sane defaults that leverage the "Express-way" of structuring an app's views. This makes it trivial to use in basic apps.
 * method-override: Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
-* The file structure was designed in ORM format.  Please see at the very button, if interested.
+* The file structure was designed in ORM format.  Please see at the very buttum, if interested.
+
+How to use:
+1. visit: https://thawing-refuge-56336.herokuapp.com/
 
 Here is a screenshot:
 ![screen shot 2018-08-18 at 10 09 46 pm](https://user-images.githubusercontent.com/36605965/44304817-fd69db00-a334-11e8-98a7-d950af2741a4.png)
