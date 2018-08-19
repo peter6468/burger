@@ -8,4 +8,5 @@ Eat Da Burger is a burger logger.
 * node.express: a declaritive routing system. 
 * node.body-parser: bodyParser object uses various factories to create middlewares that reads a form's input + stores it as javascript object accessible through req.body
 * node.path: module provides utlitlies for working w/file + directory paths
-
+* node express-handlebars: uses sane defaults that leverage the "Express-way" of structuring an app's views. This makes it trivial to use in basic apps.
+* method-override: Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
